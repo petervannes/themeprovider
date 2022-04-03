@@ -1,15 +1,11 @@
 .dark {
-  --theme_bg_color: linear-gradient(black, lightGrey);
-  --theme_fg_color: white;
-  --theme_btn_bordercolor: darkgrey;
+  --theme_bg_color: linear-gradient(#000000, #888888);
+  --theme_color: #bbbbbb;
+  --theme_font_size: 16px;
 
-}
-
-.light {
-  --theme_bg_color: linear-gradient(white, lightGrey);
-  --theme_color: #333333;
-
-  --theme_btn_bg_color: #bbbbbb;
+  --theme_btn_font-size: 16px;
+  --theme_btn_padding: 0.8em 1.8em;
+  --theme_btn_bg_color: #444444;
   --theme_btn_color: #eeeeee;
   --theme_btn_border: #aaaaaa 2px solid;
   --theme_btn_transition-duration: 0.4s;
@@ -18,14 +14,64 @@
   --theme_btn_hover_bg_color: #888888;
   --theme_btn_hover_color: #eeeeee;
   --theme_btn_hover_border: #aaaaaa 2px solid;
+
+}
+
+.light {
+  --theme_bg_color: linear-gradient(#ffffff, #888888);
+  --theme_color: #333333;
+  --theme_font_size: 16px;
+
+  --theme_btn_font-size: 16px;
+  --theme_btn_padding: 0.8em 1.8em;
+  --theme_btn_bg_color: #bbbbbb;
+  --theme_btn_color: #eeeeee;
+  --theme_btn_border: #aaaaaa 2px solid;
+  --theme_btn_transition-duration: 0.4s;
+  --theme_btn_hover_color: #eeeeee;
+
+  --theme_btn_hover_transition-duration: 0.1s;
+  --theme_btn_hover_bg_color: #888888;
+  --theme_btn_hover_color: #eeeeee;
+  --theme_btn_hover_border: #aaaaaa 2px solid;
 }
 
 .high-contrast {
-  --theme_bg_color: white;
-  --theme_fg_color: white;
+  --theme_bg_color: #ffffff;
+  --theme_color: #111111;
+  --theme_font_size: 24px;
+
+  --theme_btn_font-size: 18px;
+  --theme_btn_padding: 0.71em 1.45em;
+  --theme_btn_bg_color: #eeeeee;
+  --theme_btn_color: #111111;
+  --theme_btn_border: #111111 2px solid;
+  --theme_btn_transition-duration: 0.4s;
+
+  --theme_btn_hover_transition-duration: 0.1s;
+  --theme_btn_hover_bg_color: #111111;
+  --theme_btn_hover_color: #eeeeee;
+  --theme_btn_hover_border: #eeeeee 2px solid;
 }
 
+/*
+  https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40
+ */
 .colorblind {
-  --theme_bg_color: white;
-  --theme_fg_color: white;
+  --theme_bg_color: #ffffff;
+  --theme_color: #333333;
+  --theme_font_size: 16px;
+
+  --theme_btn_font-size: 18px;
+  --theme_btn_padding: 0.71em 1.45em;
+  --theme_btn_bg_color: #4b0092;
+  --theme_btn_color: #1aff1a;
+  --theme_btn_border: #1aff1a 2px solid;
+  --theme_btn_transition-duration: 0.4s;
+
+  --theme_btn_hover_transition-duration: 0.1s;
+  --theme_btn_hover_bg_color: #1aff1a;
+  --theme_btn_hover_color: #4b0092;
+  --theme_btn_hover_border: #4b0092 2px solid;
+
 }
