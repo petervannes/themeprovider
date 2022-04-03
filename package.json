@@ -6,8 +6,12 @@
   "author": "Peter van Nes",
   "license": "MIT",
   "private": false,
+  "homepage": "https://petervannes.github.io/themeprovider",
   "scripts": {
-    "start": "webpack serve --mode=development"
+    "start": "webpack serve --mode=development",
+    "predeploy": "npm run build",
+    "build": "rm -rf dist && webpack --mode=production",
+    "githubdeploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
