@@ -1,0 +1,31 @@
+.dark {
+  --theme_bg_color: linear-gradient(black, lightGrey);
+  --theme_fg_color: white;
+  --theme_btn_bordercolor: darkgrey;
+
+}
+
+.light {
+  --theme_bg_color: linear-gradient(white, lightGrey);
+  --theme_color: #333333;
+
+  --theme_btn_bg_color: #bbbbbb;
+  --theme_btn_color: #eeeeee;
+  --theme_btn_border: #aaaaaa 2px solid;
+  --theme_btn_transition-duration: 0.4s;
+
+  --theme_btn_hover_transition-duration: 0.1s;
+  --theme_btn_hover_bg_color: #888888;
+  --theme_btn_hover_color: #eeeeee;
+  --theme_btn_hover_border: #aaaaaa 2px solid;
+}
+
+.high-contrast {
+  --theme_bg_color: white;
+  --theme_fg_color: white;
+}
+
+.colorblind {
+  --theme_bg_color: white;
+  --theme_fg_color: white;
+}

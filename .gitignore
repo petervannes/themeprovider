@@ -1,0 +1,14 @@
+### Dist ###
+dist
+
+# DS_store
+.DS_store
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# everything in de .idea folder
+.idea
