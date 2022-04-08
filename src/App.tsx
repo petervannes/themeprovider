@@ -3,7 +3,7 @@ import styles from "./App.module.css"
 import {ThemeContext} from "./themes/ThemeProvider"
 import SwitchSelector from "react-switch-selector"
 
-export function App(): JSX.Element {
+export const App = (): JSX.Element => {
   const {changeTheme} = useContext(ThemeContext)
 
   const options = [
@@ -25,16 +25,16 @@ export function App(): JSX.Element {
     }
   ]
 
-  const onChange = (newValue:unknown) => {
+  const onChange = (newValue: unknown) => {
     changeTheme(newValue as string)
   }
 
   const initialSelectedIndex = options.findIndex(({value}) => value === "bar")
+  console.log(styles)
   return (
     <div className={styles.container}>
-      <h1>Themed CSS Modules</h1>
-      <p>A simple demo how to apply themes in React using CSS Modules. </p>
-
+      <h1>Themed styles using CSS Modules</h1>
+      <p>A demo how to apply themes in React using CSS Modules. </p>
       <div className={styles.switch}>
         <SwitchSelector
           onChange={onChange}
