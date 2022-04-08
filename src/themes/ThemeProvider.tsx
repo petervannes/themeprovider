@@ -1,5 +1,5 @@
 import React, {createContext, useState} from "react"
-import themes from "../themes/Themes.module.css"
+import themes from "../themes/ThemeProvider.module.css"
 
 const validThemes = Object.keys(themes)
 const defaultTheme = "light"
